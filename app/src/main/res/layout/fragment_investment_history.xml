@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_history"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    tools:context=".invest.InvestmentHistoryFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/active_investments"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:textColor="@color/green"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_margin="10dp">
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="0dp"
+                android:layout_weight="1.8"
+                android:layout_height="wrap_content"
+                android:text="@string/plan"/>
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/invested"/>
+
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/total_earnings"/>
+        </LinearLayout>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/template_recyclerview"
+            android:layout_marginTop="-20dp"/>
+    </LinearLayout>
+<include layout="@layout/template_progress"
+    android:visibility="gone"/>
+    <FrameLayout
+        android:id="@+id/container"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

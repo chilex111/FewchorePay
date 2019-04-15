@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.EditProfileFragment">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/edit_profile"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <include layout="@layout/template_bck_profile"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:orientation="vertical">
+
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_details"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"/>
+
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_name"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <fewchore.com.exolve.fewchore.views.PoppinsLightTextView
+                android:id="@+id/textBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Access Bank"
+                android:textColor="@color/green"/>
+
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_number"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <fewchore.com.exolve.fewchore.views.PoppinsLightTextView
+                android:id="@+id/textAcctNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*********032"
+                android:textColor="@color/green"/>
+
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_type"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <fewchore.com.exolve.fewchore.views.PoppinsLightTextView
+                android:id="@+id/textAcctType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Savings"
+                android:textColor="@color/green"/>
+
+            <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bvn"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <fewchore.com.exolve.fewchore.views.PoppinsLightTextView
+                android:id="@+id/textBVN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*********0332"
+                android:textColor="@color/green"/>
+            <FrameLayout
+                android:id="@+id/framelogIn"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20sp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rectangle_green"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideB">
+                <fewchore.com.exolve.fewchore.views.PoppinsButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:text="@string/next"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/ic_arrow_forward_small"
+                    android:drawableEnd="@drawable/ic_arrow_forward_small" />
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="20dp">
+
+
+        <fewchore.com.exolve.fewchore.views.PoppinsButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:minHeight="2dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"
+            android:textColor="@color/green"/>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

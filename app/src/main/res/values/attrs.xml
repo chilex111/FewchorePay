@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PoppinsEditText">
+        <attr name="customFont" format="string" />
+        <attr name="posX" format="integer" />
+        <attr name="posY" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PoppinsTextView">
+        <attr name="PoppinsTextView" format="string" />
+        <attr name="x" format="integer" />
+        <attr name="y" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PoppinsBoldTextView">
+        <attr name="PoppinsBoldTextView" format="string" />
+        <attr name="bX" format="integer" />
+        <attr name="bY" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PoppinsLightTextView">
+        <attr name="PoppinsLightTextView" format="string" />
+        <attr name="lX" format="integer" />
+        <attr name="lY" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PoppinsButton">
+        <attr name="PoppinsButton" format="string" />
+        <attr name="btX" format="integer" />
+        <attr name="btY" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="WeimarBoldTextView">
+        <attr name="WeimarBoldTextView" format="string" />
+        <attr name="bwX" format="integer" />
+        <attr name="bwY" format="integer" />
+    </declare-styleable>
+</resources>

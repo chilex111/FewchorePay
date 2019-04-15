@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:name="android:paddingTop"
+        android:title=""
+        tools:ignore="ExtraText">0dp</item>
+
+    <item
+        android:id="@+id/nav_dashboard1"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/my_investments" />
+    <item
+        android:id="@+id/nav_invest"
+        android:icon="@drawable/ic_planting"
+        android:title="@string/invest_now" />
+
+    <item
+        android:id="@+id/nav_Profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_list"
+        android:title="@string/investment_history" />
+    <item
+        android:id="@+id/nav_signout"
+        android:icon="@drawable/exit"
+        android:title="@string/log_out" />
+
+</menu>

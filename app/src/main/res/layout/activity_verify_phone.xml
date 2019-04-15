@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VerifyPhoneActivity"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <include layout="@layout/template_bck_"/>
+
+    <android.support.constraint.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/guide"
+        android:layout_width="0.0dp"
+        android:layout_height="0.0dp"
+        app:layout_constraintGuide_percent="0.35"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_phone_number"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guide"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="end"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp" />
+
+    <fewchore.com.exolve.fewchore.views.PoppinsTextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="end"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginEnd="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="6"
+        android:layout_margin="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhone"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/pinChar1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:ems="2">
+            <requestFocus/>
+        </fewchore.com.exolve.fewchore.views.PoppinsEditText>
+
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/pinChar2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:ems="2"/>
+
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/pinChar3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:ems="2"/>
+
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/pinChar4"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:ems="2"/>
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/pinChar5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:ems="2"/>
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/pinChar6"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:ems="2"/>
+    </LinearLayout>
+
+  <!--  <android.support.design.widget.TextInputLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhone"
+        app:layout_constraintRight_toRightOf="parent">
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/editCode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/enter_code_here"
+            android:maxLength="11"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>-->
+    <fewchore.com.exolve.fewchore.views.PoppinsTextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_text"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+<include layout="@layout/template_progress"/>
+
+</android.support.constraint.ConstraintLayout>

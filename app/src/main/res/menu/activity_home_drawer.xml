@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:name="android:paddingTop"
+        android:title=""
+        tools:ignore="ExtraText">0dp</item>
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/dashboard" />
+    <item
+        android:id="@+id/nav_borrow"
+        android:icon="@drawable/pay"
+        android:title="@string/borrow_money" />
+
+    <item
+        android:id="@+id/nav_Profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/nav_pay"
+        android:icon="@drawable/ic_pay_back"
+        android:title="@string/pay_back" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_list"
+        android:title="@string/loan_history" />
+
+
+    <item
+        android:id="@+id/nav_signout"
+        android:icon="@drawable/exit"
+        android:title="@string/log_out" />
+
+</menu>

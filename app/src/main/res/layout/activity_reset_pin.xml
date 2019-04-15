@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_light"
+    tools:context=".activity.SetUpPinActivity">
+
+    <include layout="@layout/template_bck_"/>
+    <LinearLayout
+        android:id="@+id/linearPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+        <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/memorable_four"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+
+        <fewchore.com.exolve.fewchore.views.PoppinsEditText
+            android:id="@+id/editTextPin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/line_rectangle_white"
+            android:hint="@string/enter_new_pin"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:maxLength="4"
+            android:textColorHint="@color/white"
+            android:inputType="numberPassword"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/editTextConfirmNewPin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/line_rectangle_white"
+            android:hint="Confirm new PIN"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:maxLength="4"
+            android:textColorHint="@color/white"
+            android:inputType="numberPassword"
+            android:padding="12dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonPin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearPassword"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangle_green"
+        android:text="@string/reset_pin"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAllCaps="false"/>
+
+    <include layout="@layout/template_progress"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity">
+   <include layout="@layout/template_bck_home"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center">
+                <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                    android:id="@+id/pageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dashboard"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:id="@+id/linearLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="-4dp"
+                    android:orientation="vertical">
+                    <fewchore.com.exolve.fewchore.views.PoppinsTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loan_taken"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+                    <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                        android:id="@+id/textLoanAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:layout_marginTop="-4dp"
+                        android:drawableLeft="@drawable/ic_nigeria_naira"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_nigeria_naira" />
+                    <LinearLayout
+                        android:id="@+id/linearDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="-4dp">
+
+                        <fewchore.com.exolve.fewchore.views.PoppinsTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/due_date"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"/>
+                        <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                            android:id="@+id/textDueDate"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginStart="4dp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+                        android:id="@+id/payNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_now"
+                        android:layout_marginTop="-4dp"
+                        android:textSize="18sp"
+                        android:minHeight="2dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/ic_arrow_forward_small"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/white"
+                        android:drawablePadding="10dp"
+                        android:drawableEnd="@drawable/ic_arrow_forward_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+
+    <include
+        layout="@layout/template_progress"/>
+</android.support.design.widget.CoordinatorLayout>

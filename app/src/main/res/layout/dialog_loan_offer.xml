@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:minHeight="200dp"
+    android:minWidth="350dp"
+    android:orientation="vertical">
+<fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/loan_offer_approval"/>
+    <fewchore.com.exolve.fewchore.views.PoppinsTextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/green"
+        android:text="@string/read_terms_and_condition"
+        />
+    <fewchore.com.exolve.fewchore.views.PoppinsTextView
+        android:id="@+id/textMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="4">
+        <fewchore.com.exolve.fewchore.views.PoppinsButton
+            android:id="@+id/buttonAccept"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="@string/accept_loan"
+            android:background="@drawable/rectangle_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+        <fewchore.com.exolve.fewchore.views.PoppinsButton
+            android:id="@+id/buttonReject"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:text="@string/reject_loan"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_green"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:minWidth="350dp"
+    android:minHeight="200dp"
+    android:maxHeight="200dp"
+    android:maxWidth="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:background="@android:color/transparent"
+        android:layout_gravity="end"/>
+    <fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/withdraw_msg"
+        android:textAlignment="center"/>
+
+    <fewchore.com.exolve.fewchore.views.PoppinsLightTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forfeit_msg"
+        android:textAlignment="center"/>
+    <fewchore.com.exolve.fewchore.views.PoppinsButton
+        android:id="@+id/withdraw"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_red"
+        android:gravity="center"
+        android:text="@string/withdraw_investment"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/buttonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"/>
+<fewchore.com.exolve.fewchore.views.PoppinsBoldTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/general_terms_and_conditions"
+    android:layout_gravity="center"/>
+    <fewchore.com.exolve.fewchore.views.PoppinsTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="These Terms and Conditions constitute our offer and set out the terms governing this Agreement between you and us. It is important that you read these Terms and Conditions carefully and keep them for future reference. By accepting this online offer, you agree that you have read and accepted these Terms and Conditions. You authorise us to review your credit report and you understand that this loan (if granted) is subject to transaction fees and default fees and is governed by the Laws of the Federal Republic of Nigeria.
+You will be asked to provide certain information when you apply for this loan. This information is used for verification purposes.
+For ease of understanding, “You”, “your”, “Customer” and “Borrower” mean the person who applied for this loan facility and agrees to these Terms and Conditions, while “We”, “us”, “our”, “ and “Lender” shall mean Fewchore Finance Company Ltd, and following an assignment, any person, company or bank to whom the rights and/or obligations of the Lender have been assigned.
+CUSTOMER CONSENT
+By ticking the “I agree to the Terms and Conditions herein”, which you hereby adopt as your electronic signature, you consent and agree that:
+a.	We can provide materials and other information about your legal rights and duties to you electronically.
+b.	We are authorised to share, receive and use data/information collected from your transaction with other affiliated third parties.
+c.	Your electronic signature on agreements and documents has the same effect as if you signed them using ink on paper or any other physical means.
+d.	We can send all important communications, billing statements and demand notes and reminders to you electronically via our app or to an email address that you provide to us. When we send you such information/data electronically and/or make it available online as indicated above, that shall have the same meaning and effect as if we provided said information/data to you physically. The transaction done electronically between you and us is valid and enforceable.
+e.	For the avoidance of doubt, approval of the credit facility under this Agreement is conditional upon the validation of your bank verification number (BVN) and verification of your debit card. This offer will be rescinded and the approval for the credit facility will not be successful if the BVN validation and other verification checks are unsatisfactory.
+
+	YOUR OBLIGATIONS
+1.	You agree to repay the loan plus accrued interest and other charges (where applicable) in accordance with the dedicated repayment schedule as provided upon approval of this application. Such repayment schedule may change by way of written agreement between you and us.
+2.	You have authorized any loan application made in your name via this platform. You will be deemed responsible for any unauthorized application using this platform.
+3.	You agree to repay the loan on the repayment due date via electronic debit from the debit card/bank account you provided.
+4.	We shall on the repayment due date deduct via the card details or bank account provided by you. We will never conduct any transactions via the card details or bank account, except as relates to the scheduled loan repayments. In the event of a double repayment initiated in error by you, we will on a best effort basis process a refund within a reasonable time.
+5.	You hereby indemnify us against any and all losses, liabilities or damages that may arise in the event that you use a third party's card on this platform without the consent of such third party.
+6.	In the event of a default or insufficiency of funds in your bank account, you hereby authorize us to charge any other cards or bank accounts, details of which you may have provided to us on this platform (or which may be connected with your BVN) other than the primary card listed on an ongoing basis until the debt is settled.
+7.	You are permitted to rescind this application within 7 days from the date of loan approval, provided we have not disbursed the loan to you.
+8.	You shall provide us with information, via e-mail or other electronic medium or any other form of writing as well as documents submitted in support of the loan application form, that are true, accurate and complete. We accept no liability for consequences arising out of any erroneous, incorrect or incomplete information supplied by you. If you suspect that there is an error in the information you have provided to us, you shall advise us accordingly without delay. We will endeavour to correct the error whenever and wherever possible on a 'best effort' basis but shall have no liability arising therefrom.
+9.	You shall complete your repayment instrument details with true, accurate, up to date and complete personal information on this platform. In the event that your personal information, including phone number, address and status of employment, changes, you are required to inform us of such change immediately without delay. Under no circumstance would we be liable for any loss, expense or damage of any kind incurred by us due to your non-compliance with this requirement.
+10.	You warrant and represent that you have the right and capacity to accept this loan and have taken all necessary actions to authorize the same in accordance with the terms and conditions herein.
+11.	You also represent and warrant that you are not in default under any obligation in respect of any borrowed money that the acceptance of this facility will be or result in breach of or default under any provision of any other agreement to which you are a party.
+
+	INTEREST
+1.	Subject to 3 and 4 below, the Annualized Percentage Rate of Interest (“APR”) for the loan is in line with prevailing market conditions.   We will calculate interest at a flat rate on the daily balance outstanding.
+2.	We may in our sole discretion increase or decrease the prevailing interest rate for any reason.
+3.	Any change in interest rate will take effect in respect of your loan following a minimum of 14 days’ written notice to you in this regard.
+4.	There would be a processing fee of N100 flat
+5.	In the event that we vary the rate of interest payable on the loan, you shall be duly notified 10 days prior to the implementation of said variation.
+
+	PAYMENTS
+All payments by you will be made via the following methods: electronic debit from your verified debit card/bank account. All other methods of payment will be accepted with our consent only.
+In particular:
+1.	You will be given a dedicated and customized repayment schedule upon approval of the loan.
+2.	You will make monthly repayments in accordance with the repayment schedule.
+3.	You shall repay the amount owed by the payment due date via an electronic debit from the card/account provided by you or through a direct debit mandate.
+4.	You hereby agree that non-payment of the amount owed by the payment due date shall render you in default and entitles us to take steps to recover the outstanding loan amount in accordance with.
+5.	You may make an early payment of all the outstanding loan obligation due hereunder on any day before the final payment date.
+
+	PROVISION OF ADDITIONAL INFORMATION
+At our request, you shall  provide us with latest financial statements, contingent liability details and any other reasonable information relating to you or your financial affairs. You hereby also consent to us requesting and your Employer confirming and or providing relevant information to us as well as any other information which we may require hereunder.
+	USE OF CREDIT BUREAU
+1.	We will approach a dedicated credit reference agency for a credit report on you in considering any application for a loan.
+2.	You authorize us to access any information available to us as provided by the credit reference agency.
+3.	You also agree that your details and the loan application decision will be registered with the credit agency.
+
+	DEFAULT
+1.	Default in terms of this Agreement will occur if:
+a.	You fail to make any scheduled repayment in full, on or before the payment due date in accordance with the monthly repayment plan given to you; or
+b.	Any representation, information, warranty or assurance made or given by you in connection with this loan or any information or documentation supplied by you, is discovered to be incorrect; or
+c.	You do or omit to do anything which may prejudice our rights in terms of this agreement or cause us to suffer any loss or damage. or
+d.	A bankruptcy petition is filed against you. or
+e.	Fraud is detected at any time during the lifespan of the loan. or
+f.	Where you are unable to pay any other party within the meaning of Section 1 of the Bankruptcy Act (Cap 30) Laws of the Federation of Nigeria. or
+g.	Where you fail to remedy any default in the performance or observance of any other term, condition or covenant herein after ten (10) days’ notice is given to you by us.
+2.	If you default in your obligations under this Agreement, we will be entitled to do the following:
+a.	On each repayment date, collect the total amount payable by the date in accordance with the repayment plan schedule given to you.
+b.	Where you fail to honour your obligation to repay your total monthly repayment amount by the payment due date, we shall be entitled to collect the total outstanding amount.
+c.	Where a three (3) day period has elapsed since the payment due date and all or some of the repayment amount remains outstanding, we will start calculating defaulting interest at the rate of 3% per month plus the applicable borrowing interest rate.
+d.	Following your default, we reserve the right to assign our right, title and interest under the Agreement to an external collections agency who will take all steps, within the bounds of the law, to collect the outstanding loan amount.
+e.	We also reserve the right to institute legal proceedings against you and are under no obligation to inform you before such proceedings commence.
+f.	We will be entitled to terminate this Agreement (after service of any notice required there under) if you in any way perpetrate, attempt to or are involved in any act of fraud or other criminal activity in respect of us or the loan, or if any information provided by you as part of your application is incorrect or misleading in any material manner. On such termination, we reserve the right to demand repayment of the full loan amount with interest calculated as stipulated in these Terms and Conditions.
+g.	Hold you responsible for all legal costs and expenses incurred by us in attempting to obtain repayment of any outstanding loan balance owed by you. Interest on any amount which becomes due and payable shall be charged in accordance with these Terms and Conditions.
+
+
+
+3.	The default interest rate:
+a.	is charged by us in addition to the normal interest rate which we charge you at the same time and in the same manner as that normal interest;
+b.	accrues before and after any court judgment, which we obtain against you; and
+c.	is a form of liquidated damages to compensate us for the additional risk and other administrative costs and expenses associated with your failure to pay the outstanding sum.
+
+ELECTRONIC DOCUMENT INDEMNITY
+We hereby agree to act upon this electronic application, as provided by you, for loan facilities with us and you hereby irrevocably and unconditionally agree that these terms and conditions shall be binding and enforceable against you..
+	MISCELLANEOUS
+1.	This Agreement shall be governed by the laws of the Federal Republic of Nigeria and shall be subject to the jurisdiction of the courts of the Federal Republic of Nigeria.
+2.	If we do not strictly enforce our rights under this Agreement (including our right to insist on the repayment of all sums due on the Payment Due Date) or grant you an indulgence, we will not be prevented from insisting upon our strict rights at a later date.
+3.	We reserve the right to transfer or assign our rights and obligation under this Agreement (including our obligation to lend money to you or the amount owed under this Agreement) to another person.
+4.	We may inform you of a transfer/assignment of our rights hereunder if such a transfer results in a change in the administration of this Agreement.
+5.	You authorize us to disclose any information or documentation relating to the loan to third parties including credit reference agencies, collection agencies, law enforcement agencies including but not limited to the Economic and Financial Crimes Commission and the Special Fraud Unit of the Nigerian Police Force as well as your employers (where you are in salaried employment) if the loan has ceased to be serviced by you.
+6.	We reserve the right, at all times, to vary the terms and conditions of the loan. Any such variation will become effective upon notice to you by any means we consider reasonable in the circumstance.
+7.	We may at any time with or without notice (a) combine or consolidate some or all of your loan account with us, without any liability to us and (b) set off and transfer any sum standing to the credit of any such account in full or partial payment of any amount you owe to us. This clause is in addition to and does not amend or qualify any other present or future right of ours to combine or set off any of your accounts with us.
+8.	No waiver shall be implied in this agreement and any waiver conceded by us shall be in writing.
+Declaration
+Customer is 18 years old or over.
+The information given is correct to the best of customer’s knowledge and belief, and customer shall inform Fewchore Finance Company Limited of any change in the information given in this form without delay.
+If a fraudulent activity is associated with the operation of customer account, customer agree that lender has the right to apply restrictions to customers account and report to appropriate regulatory bodies and law enforcement agencies.
+I agree to the terms and conditions herein.
+"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
