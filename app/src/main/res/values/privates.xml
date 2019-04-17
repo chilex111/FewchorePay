@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="public_key">pk_live_8d4bcf5e842db367c576175ec7364bd1c8a019d7</string>
+    <string name="secret_key">sk_live_ecc2848d1538993498327d5d38e6fcc1a636c443</string>
+
+</resources>
