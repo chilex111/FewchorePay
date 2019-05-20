@@ -6,6 +6,7 @@ import android.content.Context
 import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.app.AlertDialog
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
@@ -34,6 +35,7 @@ import fewchore.com.exolve.fewchore.model.LookupCardsModel
 import kotlinx.android.synthetic.main.fragment_look_up.*
 import kotlinx.android.synthetic.main.fragment_look_up.view.*
 import kotlinx.android.synthetic.main.template_progress.view.*
+import kotlinx.android.synthetic.main.template_recyclerview.view.*
 import org.json.JSONObject
 import java.text.SimpleDateFormat
 import java.util.*
@@ -52,7 +54,7 @@ class LookUpFragment : Fragment(), CardBooleanListener, StatusListener, Encrypti
     private var param1: String? = null
     private var param2: String? = null
     private var listener: FragmentListener? = null
-    private var recyclerView: RecyclerView ?= null
+  //  private var recyclerView: RecyclerView ?= null
     //private var relativeLayout: RelativeLayout ?= null
     private var appUtils: AppUtils ?= null
     private var secretKey: String ?= null
@@ -70,23 +72,36 @@ class LookUpFragment : Fragment(), CardBooleanListener, StatusListener, Encrypti
         // Inflate the layout for this fragment
         val v =  inflater.inflate(R.layout.fragment_look_up, container, false)
 
+
+        return v
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
         LookUpCardAdapter.listener = this
         EncryptCard.encryptListener = this
         TransactionAsync.saveEncryptionListener = this
         SaveLookUpAsync.listener = this
 
-        recyclerView = v.findViewById(R.id.recyclerView)
-       // relativeLayout = v.findViewById(R.id.relativeProgress)
+        //recyclerView = v.findViewById(R.id.recyclerView)
+        // relativeLayout = v.findViewById(R.id.relativeProgress)
         appUtils = AppUtils(activity!!)
 
         if (appUtils!!.hasActiveInternetConnection(activity!!)) {
-            v.progressLk.visibility = View.VISIBLE
+            progressLk.visibility = View.VISIBLE
 
             KeysAsync().execute()
         }else{
             Toast.makeText(activity,"Check your Internet Connection", Toast.LENGTH_LONG).show()
         }
-        return v
+
+        btnSkip.setOnClickListener {
+            val localBuilder = AlertDialog.Builder(activity!!)
+            localBuilder.setMessage("If you have not activated  card it might affect your change of receiving a loan")
+            localBuilder.setNeutralButton(R.string.ok) { _, _ ->  proceed()}
+            localBuilder.create().show()
+
+        }
     }
     override fun statusListener(status_msg: String, status: Boolean?, user_status: String?) {
         activity?.progressLk?.visibility = View.GONE
@@ -262,11 +277,11 @@ class LookUpFragment : Fragment(), CardBooleanListener, StatusListener, Encrypti
                     if (cardsModel.cards.isNotEmpty()&&(cardsModel.cards!= null)) {
 
                         val cardAdapter = LookUpCardAdapter(cardsModel.cards, activity!!)
-                        recyclerView!!.layoutManager = LinearLayoutManager(activity)
+                        lookRecycler.recyclerView!!.layoutManager = LinearLayoutManager(activity)
 
-                        recyclerView!!.adapter = cardAdapter
-                        recyclerView!!.setHasFixedSize(true)
-                        recyclerView!!.requestFocus()
+                        lookRecycler.recyclerView!!.adapter = cardAdapter
+                        lookRecycler.recyclerView!!.setHasFixedSize(true)
+                        lookRecycler.recyclerView!!.requestFocus()
                     }else{
                         proceed()
                     }
