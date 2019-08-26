@@ -170,4 +170,5 @@
     <string name="select_a_card_to_make_your_payment">Select a card to make your payment</string>
     <string name="look_up_cards">Please select any of your cards and activate it. This will only be used when your loan deduction was not successful in your primary card</string>
     <string name="submit_otp">Submit OTP</string>
+    <string name="for_salary_earners_only">FOR SALARY EARNERS ONLY</string>
 </resources>
