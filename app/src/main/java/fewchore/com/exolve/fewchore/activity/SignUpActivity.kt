@@ -172,7 +172,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+  /*  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
         super.onActivityResult(requestCode, resultCode, data)
 
         try {
@@ -190,7 +190,7 @@ class SignUpActivity : AppCompatActivity() {
         }
 
 
-    }
+    }*/
 
     private fun signUp(): Boolean{
         emailText = editEmail!!.text.toString()
